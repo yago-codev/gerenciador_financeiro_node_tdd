@@ -11,7 +11,7 @@ test('Deve listar todos os usuários', () => {
 
 // test.skip = vai ignorar o teste
 // test.only = vai executar somente esse teste
-test.only('Deve inserir usuário com sucesso', () => {
+test('Deve inserir usuário com sucesso', () => {
   // o Date.now() servirá pra pegar o tempo atual em milisegundos,
   // com isso iremos garantir que os emails nunca irão se repetir
   const email = `${Date.now()}@mail.com`;
