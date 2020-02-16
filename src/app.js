@@ -12,6 +12,7 @@ app.db = knex(knexfile.test);
 // portanto o cwd foi setado como sendo a pasta a partir de onde ele deverá buscar
 consign({ cwd: 'src', verbose: false })
   .include('./config/middlewares.js')
+  .then('./services')
   .then('./routes')
   .then('./config/routes.js')
   .into(app);
